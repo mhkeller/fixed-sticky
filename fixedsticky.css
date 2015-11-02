@@ -18,5 +18,5 @@
 	display: none;
 }
 .fixedsticky-on + .fixedsticky-dummy {
-	display: block;
+	display: inline-block;
 }
