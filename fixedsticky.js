@@ -56,6 +56,7 @@
 
 			var $el = $( el ),
 				height = $el.outerHeight(),
+				width = $el.outerWidth(),
 				initialOffset = $el.data( S.keys.offset ),
 				scroll = S.getScrollTop(),
 				isAlreadyOn = $el.is( '.' + S.classes.active ),
@@ -75,7 +76,7 @@
 			if( initialOffset === undefined ) {
 				initialOffset = $el.offset().top;
 				$el.data( S.keys.offset, initialOffset );
-				$el.after( $( '<div>' ).addClass( S.classes.clone ).height( height ) );
+				$el.after( $( '<div>' ).addClass( S.classes.clone ).height( height ).width( width ) );
 			}
 
 			if( !position ) {
